@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Dasar</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jquery.js">
+    </script>
+</head>
+<body>
+    <h1>Effect Query</h1>
+    <button id="tombol">Tampilkan kotak (slideDown)</button>
+    <button id="tombol2">Sembunyikan kotak (slideUp)</button> 
+    <button id="tombol3">Effect slide Toggle kotak (slideToggle)</button>
+    <div class="box"></div>
+</body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#tombol').click(function(){
+                $('.box').slideDown();
+            });
+            $('#tombol2').click(function(){
+                $('.box').slideUp();
+            });
+            $('#tombol3').click(function(){
+                $('.box').slideToggle();
+            });
+        });
+    </script>
+</html>

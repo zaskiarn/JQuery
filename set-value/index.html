@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menetapkan nilai dan value dengan JQuery</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Set Function JQuery</h1>
+    <button id="tombol">KLIK</button>
+    <input type="text" name="nama" class="nama">
+    <p class="nama"></p>
+</body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#tombol').click(function(){
+                $('.nama').val("PPLG SMKN 3 Kendal");
+            });
+        });
+    </script>
+</html>

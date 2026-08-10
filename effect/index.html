@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Dasar</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Effect JQuery</h1>
+    <button id="tombol">Tampilkan kotak</button>
+    <button id="tombol2">Sembunyikan kotak</button>
+    <div class="box"></div>
+</body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#tombol').click(function(){
+                $('.box').show();
+            });
+            $('#tombol2').click(function(){
+                $('.box').hide();
+            });
+        });
+    </script>
+</html>

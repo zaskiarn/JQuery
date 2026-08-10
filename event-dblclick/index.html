@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Dasar</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jquery.js">
+        
+    </script>
+</head>
+<body>
+    <h1>PPLG JQuery Dasar</h1>
+    <button id="tombol">TOMBOL</button>
+    <div class="box"></div>
+</body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#tombol').dblclick(function(){
+                $('.box').toggle();
+            });
+        });
+    </script>
+</html>
