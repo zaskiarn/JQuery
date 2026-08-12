@@ -10,6 +10,7 @@ h1 {
     height: 300px;
     width: 300px;
     background: orange;
+    display: none;
 }
 
 #tombol {

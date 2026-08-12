@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JQuery Dasar</title>
+    <title>Jquery dasar</title>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <script>window.jQuery || document.write('<script src="jquery.js"><\/script>')</script>
+    
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="jquery.js">
-    </script>
 </head>
 <body>
-    <h1>Callback Function pada JQuery</h1>
+    <h1>Callback Function JQuery</h1>
     <button id="tombol">KLIK</button>
     <div class="box"></div>
-    <div class="kotak_biru">Function callback dijalankan</div>
+    <div class="kotak_biru">function callback di jalankan</div>
 </body>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('#tombol').click(function(){
-                $('.box').fadeIn(800, function(){
-                    $('.kotak_biru').show();
-                });
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#tombol').click(function(){
+            $('.box').fadeIn(800, function(){
+                $('.kotak_biru').show();
             });
         });
-    </script>
+    });
+</script>
 </html>
